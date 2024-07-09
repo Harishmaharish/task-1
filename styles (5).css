@@ -1,34 +1,42 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color:#DCA47C;
+    font-family: Arial;
   }
   
-  .chessboard {
-    display: inline-block;
+  * {
+    box-sizing: border-box;
+  }
+  h2{
+    text-align: center;
+    background-color: grey;
   }
   
-  .row {
-    display: flex;
+  form.example input[type=text] {
+    padding: 20px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
   }
   
-  .square {
-    width: 50px;
-    height: 50px;
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #67696a;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
   }
   
-  
-  .row:nth-child(odd) .square:nth-child(even),
-  .row:nth-child(even) .square:nth-child(odd) {
-    background-color: black;
+  form.example button:hover {
+    background: #0b7dda;
   }
   
-  .row:nth-child(odd) .square:nth-child(odd),
-  .row:nth-child(even) .square:nth-child(even) {
-    background-color: white; 
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
   }
-  
- 
